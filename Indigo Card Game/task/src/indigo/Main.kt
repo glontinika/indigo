@@ -30,13 +30,11 @@ fun askCommand(){
 fun reset(){
     deck = Deck().generateCards()
     println("Card deck is reset.")
-    askCommand()
 }
 
 fun shuffle() {
     deck.shuffled().toMutableList()
     println("Card deck is shuffled.")
-    askCommand()
 }
 
 fun getCard(){
@@ -52,7 +50,6 @@ fun getCard(){
     } catch (e: Exception){
         println("The remaining cards are insufficient to meet the request.")
     }
-    askCommand()
 }
 
 class Deck(){

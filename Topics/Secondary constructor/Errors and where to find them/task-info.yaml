@@ -1,0 +1,23 @@
+type: matching
+captions:
+  - A
+  - B
+  - C
+  - D
+options:
+  - Signature uniqueness violation
+  - No values passed for constructor parameters
+  - Reassigning val because of name collision
+  - Primary constructor call is absent
+files:
+  - name: src/Main.kt
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10747#comment
+status: Solved
+record: -1
+ordering:
+  - 0
+  - 1
+  - 2
+  - 3

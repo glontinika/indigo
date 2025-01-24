@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":Topics-Type_system-Handling_nullable_types_and_null_safety_in_a_string_program" external.linked.project.path="$MODULE_DIR$/../../../../../Topics/Type system/Handling nullable types and null safety in a string program" external.root.project.path="$MODULE_DIR$/../../../../.." external.system.id="GRADLE" external.system.module.group="Indigo Card Game" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../Topics/Type system/Handling nullable types and null safety in a string program">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Type system/Handling nullable types and null safety in a string program/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Type system/Handling nullable types and null safety in a string program/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../Topics/Type system/Handling nullable types and null safety in a string program/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

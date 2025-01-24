@@ -1,0 +1,16 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Unit
+  - text: Any
+  - text: void
+  - text: Unit?
+files:
+  - name: src/Main.kt
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9694#comment
+status: Solved
+record: -1
+custom_name: Hello!
+local_check: false

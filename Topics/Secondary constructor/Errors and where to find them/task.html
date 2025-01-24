@@ -1,0 +1,72 @@
+<div class="step-text">
+<p></p>
+<p>Below are four code snippets (A-D) with the class <code class="language-kotlin">Rectangle</code>, and each is incorrect. Match the snippets with the errors made in them.</p>
+<p><b>Tip:</b> The signature of a constructor includes the number, types, and order of its parameters.</p>
+<table border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td>
+<p>A:</p>
+<pre>
+<code class="language-kotlin">class Rectangle {
+    val width: Int
+    val length: Int
+
+    constructor(_width: Int, _length: Int) {
+        width = _width
+        length = _length
+    }
+}
+
+val rectangle = Rectangle()</code></pre>
+</td>
+<td>
+<p>B:</p>
+<pre>
+<code class="language-kotlin">class Rectangle {
+    val width: Int
+    val length: Int
+    
+    constructor(_width: Int, _length: Int) {
+        width = _width
+        length = _length
+    }
+
+    constructor(_sizeA: Int, _sizeB: Int) {
+        width = _sizeA
+        length = _sizeB
+    }
+}</code></pre>
+</td>
+</tr>
+<tr>
+<td>
+<p>C:</p>
+<pre>
+<code class="language-kotlin">class Rectangle {
+    val width: Int
+    val length: Int
+
+    constructor(width: Int, length: Int) {
+        width = width
+        length = length
+    }
+}</code></pre>
+</td>
+<td>
+<p>D:</p>
+<pre>
+<code class="language-kotlin">class Rectangle() {
+    var width: Int = 1
+    var length: Int = 1
+
+    constructor(width: Int, length: Int) {
+        this.width = width
+        this.length = length
+    }
+}</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
