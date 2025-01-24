@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CardGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-24T13:29:53" hostname="DESKTOP-O2UQVVK" time="0.179">
+<testsuite name="CardGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-24T14:58:55" hostname="DESKTOP-O2UQVVK" time="0.161">
   <properties/>
-  <testcase name="start" classname="CardGameTest" time="0.179"/>
+  <testcase name="start" classname="CardGameTest" time="0.161"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 A 2 3 4 5 6 7 8 9 10 J Q K
 
 ♦ ♥ ♠ ♣
 
-4♣ 7♦ 8♠ 5♣ 5♥ 3♠ 6♥ Q♥ Q♦ 4♥ 2♥ 8♦ 9♣ 8♣ A♠ 4♦ 8♥ 10♠ 3♦ 10♥ Q♠ 9♥ 4♠ 10♣ 2♣ 3♣ 7♥ K♥ J♥ 7♠ 2♠ 5♠ 6♦ 9♦ 6♠ J♣ 7♣ 5♦ K♣ 6♣ K♦ A♦ A♣ A♥ 3♥ 10♦ J♠ 9♠ K♠ Q♣ 2♦ J♦
+A♣ J♥ 5♥ 10♥ 7♠ Q♣ 2♠ 2♦ 8♦ 5♦ 4♠ 9♣ 3♦ 6♣ 10♠ J♣ A♦ 9♦ K♦ 4♣ 8♥ 7♥ Q♠ 8♣ K♥ 10♦ 6♦ K♣ K♠ 2♣ 5♠ A♥ 3♣ 9♠ 6♥ 10♣ 2♥ 4♥ 9♥ 6♠ 8♠ 3♥ 7♦ J♦ 7♣ 5♣ A♠ 3♠ 4♦ Q♦ Q♥ J♠
 ?[1;31m
 Start test 2?[0m
 A 2 3 4 5 6 7 8 9 10 J Q K
 
 ♦ ♥ ♠ ♣
 
-Q♦ 9♥ 10♥ 2♥ 5♦ Q♠ 5♣ J♦ 9♦ 3♥ 4♠ 8♠ J♥ 3♦ 4♥ A♣ 2♠ 8♥ 3♠ 9♣ 8♦ 10♠ 4♣ 6♦ 10♣ 5♠ 5♥ K♦ 7♣ K♠ 6♣ 9♠ 10♦ 6♠ A♥ Q♣ Q♥ J♣ 6♥ 7♠ 4♦ K♥ 2♣ 3♣ 8♣ A♠ 2♦ A♦ 7♦ K♣ 7♥ J♠
+4♦ J♦ 6♣ 10♥ 5♥ 2♦ 9♣ 2♠ A♥ J♥ 2♥ 5♦ K♣ 5♠ 3♣ Q♣ Q♠ 3♥ 5♣ 10♠ 3♦ 10♣ 8♦ 9♥ 6♦ 8♣ 9♦ 6♥ 4♣ Q♥ A♣ 8♥ A♠ 2♣ 7♣ J♣ J♠ 4♠ 3♠ 7♦ A♦ 9♠ K♥ 10♦ Q♦ 7♥ 8♠ 7♠ 6♠ 4♥ K♠ K♦
 ?[1;31m
 Start test 3?[0m
 A 2 3 4 5 6 7 8 9 10 J Q K
 
 ♦ ♥ ♠ ♣
 
-3♣ 10♦ 4♥ Q♦ 10♠ 4♦ 9♣ 6♣ A♣ 7♦ 2♥ 2♣ 9♦ K♦ J♦ 8♣ J♣ 3♥ 5♠ 7♠ Q♥ 8♠ 6♥ 7♣ 8♥ 4♣ 9♥ 10♣ 6♠ 5♦ 8♦ 7♥ K♥ 5♥ 3♦ Q♣ 6♦ K♠ J♠ K♣ A♦ 5♣ 2♦ J♥ Q♠ 4♠ A♥ A♠ 10♥ 3♠ 2♠ 9♠
+8♣ 6♣ J♦ J♠ 3♣ 10♥ 2♠ 9♠ A♠ 4♦ K♣ 5♦ 5♠ A♣ 9♦ 2♦ 4♣ 5♥ K♠ 6♦ 7♥ 10♣ 10♦ 9♥ 4♥ 10♠ J♣ 8♦ 9♣ 3♥ 3♠ K♦ A♥ Q♣ 8♠ K♥ Q♦ 5♣ Q♠ Q♥ J♥ 2♣ 6♠ 7♦ 3♦ 4♠ 7♠ 2♥ 6♥ A♦ 7♣ 8♥
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
