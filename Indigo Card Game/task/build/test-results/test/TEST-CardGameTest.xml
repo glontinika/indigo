@@ -1,28 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CardGameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-24T14:58:55" hostname="DESKTOP-O2UQVVK" time="0.161">
+<testsuite name="CardGameTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-01-24T15:50:12" hostname="DESKTOP-O2UQVVK" time="0.192">
   <properties/>
-  <testcase name="start" classname="CardGameTest" time="0.161"/>
+  <testcase name="start" classname="CardGameTest" time="0.192">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Application hasn't exited after exit command.&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; reset&#10;Card deck is reset.&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; get&#10;Number of cards:&#10;&gt; 10&#10;5♦ A♦ 2♥ 9♣ 6♥ J♥ J♦ 7♠ 4♦ 8♦&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; get&#10;Number of cards:&#10;&gt; 43&#10;The remaining cards are insufficient to meet the request.&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; reset&#10;Card deck is reset.&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; get&#10;Number of cards:&#10;&gt; 52&#10;Q♥ 9♣ 7♠ 6♣ 5♥ 6♥ J♥ K♥ 8♠ J♦ J♣ A♣ Q♦ 8♥ 4♦ 7♥ 10♠ 2♣ A♥ 4♠ 7♣ 3♠ Q♣ 9♥ 10♥ 6♠ 2♦ 6♦ 3♥ 9♦ 10♦ 9♠ 8♣ A♦ 2♠ K♣ 10♣ J♠ 5♦ 8♦ 4♣ Q♠ K♠ 4♥ 3♦ 7♦ A♠ 5♠ K♦ 2♥ 3♣ 5♣&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; get&#10;Number of cards:&#10;&gt; 1&#10;The remaining cards are insufficient to meet the request.&#10;Choose an action (reset, shuffle, get, exit):&#10;&gt; exit&#10;Bye&#10;Choose an action (reset, shuffle, get, exit):" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+
+Application hasn't exited after exit command.
+
+Please find below the output of your program during this failed test.
+Note that the '&gt;' character indicates the beginning of the input line.
+
+---
+
+Choose an action (reset, shuffle, get, exit):
+&gt; reset
+Card deck is reset.
+Choose an action (reset, shuffle, get, exit):
+&gt; get
+Number of cards:
+&gt; 10
+5♦ A♦ 2♥ 9♣ 6♥ J♥ J♦ 7♠ 4♦ 8♦
+Choose an action (reset, shuffle, get, exit):
+&gt; get
+Number of cards:
+&gt; 43
+The remaining cards are insufficient to meet the request.
+Choose an action (reset, shuffle, get, exit):
+&gt; reset
+Card deck is reset.
+Choose an action (reset, shuffle, get, exit):
+&gt; get
+Number of cards:
+&gt; 52
+Q♥ 9♣ 7♠ 6♣ 5♥ 6♥ J♥ K♥ 8♠ J♦ J♣ A♣ Q♦ 8♥ 4♦ 7♥ 10♠ 2♣ A♥ 4♠ 7♣ 3♠ Q♣ 9♥ 10♥ 6♠ 2♦ 6♦ 3♥ 9♦ 10♦ 9♠ 8♣ A♦ 2♠ K♣ 10♣ J♠ 5♦ 8♦ 4♣ Q♠ K♠ 4♥ 3♦ 7♦ A♠ 5♠ K♦ 2♥ 3♣ 5♣
+Choose an action (reset, shuffle, get, exit):
+&gt; get
+Number of cards:
+&gt; 1
+The remaining cards are insufficient to meet the request.
+Choose an action (reset, shuffle, get, exit):
+&gt; exit
+Bye
+Choose an action (reset, shuffle, get, exit):
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:208)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-A 2 3 4 5 6 7 8 9 10 J Q K
-
-♦ ♥ ♠ ♣
-
-A♣ J♥ 5♥ 10♥ 7♠ Q♣ 2♠ 2♦ 8♦ 5♦ 4♠ 9♣ 3♦ 6♣ 10♠ J♣ A♦ 9♦ K♦ 4♣ 8♥ 7♥ Q♠ 8♣ K♥ 10♦ 6♦ K♣ K♠ 2♣ 5♠ A♥ 3♣ 9♠ 6♥ 10♣ 2♥ 4♥ 9♥ 6♠ 8♠ 3♥ 7♦ J♦ 7♣ 5♣ A♠ 3♠ 4♦ Q♦ Q♥ J♠
-?[1;31m
-Start test 2?[0m
-A 2 3 4 5 6 7 8 9 10 J Q K
-
-♦ ♥ ♠ ♣
-
-4♦ J♦ 6♣ 10♥ 5♥ 2♦ 9♣ 2♠ A♥ J♥ 2♥ 5♦ K♣ 5♠ 3♣ Q♣ Q♠ 3♥ 5♣ 10♠ 3♦ 10♣ 8♦ 9♥ 6♦ 8♣ 9♦ 6♥ 4♣ Q♥ A♣ 8♥ A♠ 2♣ 7♣ J♣ J♠ 4♠ 3♠ 7♦ A♦ 9♠ K♥ 10♦ Q♦ 7♥ 8♠ 7♠ 6♠ 4♥ K♠ K♦
-?[1;31m
-Start test 3?[0m
-A 2 3 4 5 6 7 8 9 10 J Q K
-
-♦ ♥ ♠ ♣
-
-8♣ 6♣ J♦ J♠ 3♣ 10♥ 2♠ 9♠ A♠ 4♦ K♣ 5♦ 5♠ A♣ 9♦ 2♦ 4♣ 5♥ K♠ 6♦ 7♥ 10♣ 10♦ 9♥ 4♥ 10♠ J♣ 8♦ 9♣ 3♥ 3♠ K♦ A♥ Q♣ 8♠ K♥ Q♦ 5♣ Q♠ Q♥ J♥ 2♣ 6♠ 7♦ 3♦ 4♠ 7♠ 2♥ 6♥ A♦ 7♣ 8♥
+Choose an action (reset, shuffle, get, exit):
+> reset
+Card deck is reset.
+Choose an action (reset, shuffle, get, exit):
+> get
+Number of cards:
+> 10
+5♦ A♦ 2♥ 9♣ 6♥ J♥ J♦ 7♠ 4♦ 8♦
+Choose an action (reset, shuffle, get, exit):
+> get
+Number of cards:
+> 43
+The remaining cards are insufficient to meet the request.
+Choose an action (reset, shuffle, get, exit):
+> reset
+Card deck is reset.
+Choose an action (reset, shuffle, get, exit):
+> get
+Number of cards:
+> 52
+Q♥ 9♣ 7♠ 6♣ 5♥ 6♥ J♥ K♥ 8♠ J♦ J♣ A♣ Q♦ 8♥ 4♦ 7♥ 10♠ 2♣ A♥ 4♠ 7♣ 3♠ Q♣ 9♥ 10♥ 6♠ 2♦ 6♦ 3♥ 9♦ 10♦ 9♠ 8♣ A♦ 2♠ K♣ 10♣ J♠ 5♦ 8♦ 4♣ Q♠ K♠ 4♥ 3♦ 7♦ A♠ 5♠ K♦ 2♥ 3♣ 5♣
+Choose an action (reset, shuffle, get, exit):
+> get
+Number of cards:
+> 1
+The remaining cards are insufficient to meet the request.
+Choose an action (reset, shuffle, get, exit):
+> exit
+Bye
+Choose an action (reset, shuffle, get, exit):
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

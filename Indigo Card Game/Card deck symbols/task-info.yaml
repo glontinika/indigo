@@ -7,8 +7,17 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://hyperskill.org/projects/214/stages/1072/implement#comment
-status: Solved
+status: Failed
 feedback:
-  message: Congratulations!
-  time: "Fri, 24 Jan 2025 14:58:55 UTC"
-record: -1
+  message: |-
+    Wrong answer in test #1
+
+    Line with ranks isn&#39;t correct.
+
+    Please find below the output of your program during this failed test.
+
+    ---
+
+    Choose an action (reset, shuffle, get, exit):
+  time: "Fri, 24 Jan 2025 15:49:27 UTC"
+record: 1
