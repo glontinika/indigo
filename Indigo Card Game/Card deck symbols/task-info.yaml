@@ -1,0 +1,14 @@
+type: edu
+files:
+  - name: src/indigo/Main.kt
+    visible: true
+    learner_created: false
+  - name: test/IndigoCardGameTest.kt
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/projects/214/stages/1072/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 24 Jan 2025 13:29:54 UTC"
+record: -1
