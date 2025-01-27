@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CardGameTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-01-27T12:57:32" hostname="DESKTOP-O2UQVVK" time="0.217">
+<testsuite name="CardGameTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-01-27T22:58:40" hostname="DESKTOP-O2UQVVK" time="0.31">
   <properties/>
-  <testcase name="start" classname="CardGameTest" time="0.217">
-    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Wrong cards in hand message.&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Indigo Card Game&#10;Play first?&#10;&gt; yes&#10;Initial cards on the table: A♣ K♦ 9♥ J♥&#10;4 cards on the table, and the top card is J♥&#10;Cards in hand:  1)4♣  2)K♣  3)Q♦  4)4♠  5)10♥  6)8♦&#10;Choose a card to play (1-6):" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+  <testcase name="start" classname="CardGameTest" time="0.31">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Player turn: Wrong message for number of cards or the top card.&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;Indigo Card Game&#10;Play first?&#10;&gt; yes&#10;Initial cards on the table: 9♥ A♥ 4♦ 3♦&#10;4 cards on the table, and the top card is 3♦&#10;Cards in hand: 1)Q♠ 2)10♥ 3)7♦ 4)4♣ 5)K♣ 6)10♠&#10;Choose a card to play (1-6):&#10;&gt; 3&#10;Player wins cards&#10;Score: Player 1 - Computer 0&#10;Cards: Player 5 - Computer 0&#10;No cards on the table&#10;6♣ 8♠ J♥ J♦ 2♥ A♣&#10;Computer plays J♥&#10;1 cards on the table, and the top card is J♥&#10;Cards in hand: 1)Q♠ 2)10♥ 3)4♣ 4)K♣ 5)10♠&#10;Choose a card to play (1-5):&#10;&gt; 2&#10;Player wins cards&#10;Score: Player 3 - Computer 0&#10;Cards: Player 7 - Computer 0&#10;No cards on the table&#10;6♣ 8♠ J♦ 2♥ A♣&#10;Computer plays 6♣&#10;1 cards on the table, and the top card is 6♣&#10;Cards in hand: 1)Q♠ 2)4♣ 3)K♣ 4)10♠&#10;Choose a card to play (1-4):&#10;&gt; 2&#10;Player wins cards&#10;Score: Player 3 - Computer 0&#10;Cards: Player 9 - Computer 0&#10;No cards on the table&#10;8♠ J♦ 2♥ A♣&#10;Computer plays A♣&#10;1 cards on the table, and the top card is A♣&#10;Cards in hand: 1)Q♠ 2)K♣ 3)10♠&#10;Choose a card to play (1-3):&#10;&gt; 2&#10;Player wins cards&#10;Score: Player 5 - Computer 0&#10;Cards: Player 11 - Computer 0&#10;No cards on the table&#10;8♠ J♦ 2♥&#10;Computer plays 2♥&#10;1 cards on the table, and the top card is 2♥&#10;Cards in hand: 1)Q♠ 2)10♠&#10;Choose a card to play (1-2):&#10;&gt; 1&#10;2 cards on the table, and the top card is Q♠&#10;8♠ J♦&#10;Computer plays 8♠&#10;Computer wins cards&#10;Score: Player 5 - Computer 1&#10;Cards: Player 11 - Computer 3&#10;No cards on the table&#10;Cards in hand: 1)10♠&#10;Choose a card to play (1-1):&#10;&gt; 1&#10;1 cards on the table, and the top card is 10♠&#10;J♦&#10;Computer plays J♦&#10;2 cards on the table, and the top card is J♦&#10;Cards in hand: 1)J♣ 2)2♣ 3)10♣ 4)3♠ 5)5♦ 6)5♥&#10;Choose a card to play (1-6):&#10;&gt; 1&#10;Player wins cards&#10;Score: Player 8 - Computer 1&#10;Cards: Player 14 - Computer 3&#10;No cards on the table&#10;8♦ K♦ K♠ J♠ 2♦ 6♠&#10;Computer plays 6♠&#10;Computer wins cards&#10;Score: Player 8 - Computer 1&#10;Cards: Player 14 - Computer 4&#10;No cards on the table&#10;Cards in hand: 1)2♣ 2)10♣ 3)3♠ 4)5♦ 5)5♥&#10;Choose a card to play (1-5):" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
-Wrong cards in hand message.
+Player turn: Wrong message for number of cards or the top card.
 
 Please find below the output of your program during this failed test.
 Note that the '&gt;' character indicates the beginning of the input line.
@@ -14,10 +14,80 @@ Note that the '&gt;' character indicates the beginning of the input line.
 Indigo Card Game
 Play first?
 &gt; yes
-Initial cards on the table: A♣ K♦ 9♥ J♥
-4 cards on the table, and the top card is J♥
-Cards in hand:  1)4♣  2)K♣  3)Q♦  4)4♠  5)10♥  6)8♦
+Initial cards on the table: 9♥ A♥ 4♦ 3♦
+4 cards on the table, and the top card is 3♦
+Cards in hand: 1)Q♠ 2)10♥ 3)7♦ 4)4♣ 5)K♣ 6)10♠
 Choose a card to play (1-6):
+&gt; 3
+Player wins cards
+Score: Player 1 - Computer 0
+Cards: Player 5 - Computer 0
+No cards on the table
+6♣ 8♠ J♥ J♦ 2♥ A♣
+Computer plays J♥
+1 cards on the table, and the top card is J♥
+Cards in hand: 1)Q♠ 2)10♥ 3)4♣ 4)K♣ 5)10♠
+Choose a card to play (1-5):
+&gt; 2
+Player wins cards
+Score: Player 3 - Computer 0
+Cards: Player 7 - Computer 0
+No cards on the table
+6♣ 8♠ J♦ 2♥ A♣
+Computer plays 6♣
+1 cards on the table, and the top card is 6♣
+Cards in hand: 1)Q♠ 2)4♣ 3)K♣ 4)10♠
+Choose a card to play (1-4):
+&gt; 2
+Player wins cards
+Score: Player 3 - Computer 0
+Cards: Player 9 - Computer 0
+No cards on the table
+8♠ J♦ 2♥ A♣
+Computer plays A♣
+1 cards on the table, and the top card is A♣
+Cards in hand: 1)Q♠ 2)K♣ 3)10♠
+Choose a card to play (1-3):
+&gt; 2
+Player wins cards
+Score: Player 5 - Computer 0
+Cards: Player 11 - Computer 0
+No cards on the table
+8♠ J♦ 2♥
+Computer plays 2♥
+1 cards on the table, and the top card is 2♥
+Cards in hand: 1)Q♠ 2)10♠
+Choose a card to play (1-2):
+&gt; 1
+2 cards on the table, and the top card is Q♠
+8♠ J♦
+Computer plays 8♠
+Computer wins cards
+Score: Player 5 - Computer 1
+Cards: Player 11 - Computer 3
+No cards on the table
+Cards in hand: 1)10♠
+Choose a card to play (1-1):
+&gt; 1
+1 cards on the table, and the top card is 10♠
+J♦
+Computer plays J♦
+2 cards on the table, and the top card is J♦
+Cards in hand: 1)J♣ 2)2♣ 3)10♣ 4)3♠ 5)5♦ 6)5♥
+Choose a card to play (1-6):
+&gt; 1
+Player wins cards
+Score: Player 8 - Computer 1
+Cards: Player 14 - Computer 3
+No cards on the table
+8♦ K♦ K♠ J♠ 2♦ 6♠
+Computer plays 6♠
+Computer wins cards
+Score: Player 8 - Computer 1
+Cards: Player 14 - Computer 4
+No cards on the table
+Cards in hand: 1)2♣ 2)10♣ 3)3♠ 4)5♦ 5)5♥
+Choose a card to play (1-5):
 	at org.junit.Assert.fail(Assert.java:89)
 	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:208)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -66,10 +136,80 @@ Start test 1?[0m
 Indigo Card Game
 Play first?
 > yes
-Initial cards on the table: A♣ K♦ 9♥ J♥
-4 cards on the table, and the top card is J♥
-Cards in hand:  1)4♣  2)K♣  3)Q♦  4)4♠  5)10♥  6)8♦
+Initial cards on the table: 9♥ A♥ 4♦ 3♦
+4 cards on the table, and the top card is 3♦
+Cards in hand: 1)Q♠ 2)10♥ 3)7♦ 4)4♣ 5)K♣ 6)10♠
 Choose a card to play (1-6):
+> 3
+Player wins cards
+Score: Player 1 - Computer 0
+Cards: Player 5 - Computer 0
+No cards on the table
+6♣ 8♠ J♥ J♦ 2♥ A♣
+Computer plays J♥
+1 cards on the table, and the top card is J♥
+Cards in hand: 1)Q♠ 2)10♥ 3)4♣ 4)K♣ 5)10♠
+Choose a card to play (1-5):
+> 2
+Player wins cards
+Score: Player 3 - Computer 0
+Cards: Player 7 - Computer 0
+No cards on the table
+6♣ 8♠ J♦ 2♥ A♣
+Computer plays 6♣
+1 cards on the table, and the top card is 6♣
+Cards in hand: 1)Q♠ 2)4♣ 3)K♣ 4)10♠
+Choose a card to play (1-4):
+> 2
+Player wins cards
+Score: Player 3 - Computer 0
+Cards: Player 9 - Computer 0
+No cards on the table
+8♠ J♦ 2♥ A♣
+Computer plays A♣
+1 cards on the table, and the top card is A♣
+Cards in hand: 1)Q♠ 2)K♣ 3)10♠
+Choose a card to play (1-3):
+> 2
+Player wins cards
+Score: Player 5 - Computer 0
+Cards: Player 11 - Computer 0
+No cards on the table
+8♠ J♦ 2♥
+Computer plays 2♥
+1 cards on the table, and the top card is 2♥
+Cards in hand: 1)Q♠ 2)10♠
+Choose a card to play (1-2):
+> 1
+2 cards on the table, and the top card is Q♠
+8♠ J♦
+Computer plays 8♠
+Computer wins cards
+Score: Player 5 - Computer 1
+Cards: Player 11 - Computer 3
+No cards on the table
+Cards in hand: 1)10♠
+Choose a card to play (1-1):
+> 1
+1 cards on the table, and the top card is 10♠
+J♦
+Computer plays J♦
+2 cards on the table, and the top card is J♦
+Cards in hand: 1)J♣ 2)2♣ 3)10♣ 4)3♠ 5)5♦ 6)5♥
+Choose a card to play (1-6):
+> 1
+Player wins cards
+Score: Player 8 - Computer 1
+Cards: Player 14 - Computer 3
+No cards on the table
+8♦ K♦ K♠ J♠ 2♦ 6♠
+Computer plays 6♠
+Computer wins cards
+Score: Player 8 - Computer 1
+Cards: Player 14 - Computer 4
+No cards on the table
+Cards in hand: 1)2♣ 2)10♣ 3)3♠ 4)5♦ 5)5♥
+Choose a card to play (1-5):
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -81,13 +81,15 @@ class PlayerCards : CardGroup() {
     var wonCards: MutableList<Card> = mutableListOf()
     var point = 0
     var someoneWon = ""
+    var candidateCards : MutableList<Card> = mutableListOf()
+    var tableLastCard = Card("", "")
     fun playCard(userIsLastWinner: Boolean) : Boolean{
-        var tableLastCard = Card("", "")
         try {
             tableLastCard = tableCards.cards.last()
             println("${tableCards.cards.size} cards on the table, and the top card is $tableLastCard")
         } catch (e: NoSuchElementException) {
             println("No cards on the table")
+            tableLastCard = Card("", "")
         }
         var cardNo = ""
         if (this == userCards) {
@@ -95,11 +97,20 @@ class PlayerCards : CardGroup() {
                 println("Cards in hand: ${this.cards.joinToString(" ") { "${cards.indexOf(it) + 1})$it" }}")
                 println("Choose a card to play (1-${cards.size}):")
                 cardNo = readln()
-                if (cardNo == "exit") exitGame(userIsLastWinner)
+                if (cardNo == "exit") gameOver()
             } while (cardNo.toIntOrNull() == null || cardNo.toInt() !in 1..cards.size)
         } else {
-            cardNo = "1"
-            println("Computer plays ${this.cards[0]}")
+            println(this.cards.joinToString(" "))
+            candidateCards = findCandidateCards()
+            cardNo = when{
+                cards.size == 1 -> "1"
+                tableLastCard.suit == "" -> noCardsOnTableOrCandidate()
+                candidateCards.size == 0 -> noCardsOnTableOrCandidate()
+                candidateCards.size == 1 -> (cards.indexOf(candidateCards.first())+1).toString()
+                candidateCards.size > 1 -> noCardsOnTableOrCandidate(tableLastCard)
+                else -> (cards.indexOf(cards.random())+1).toString()
+            }
+            println("Computer plays ${this.cards[cardNo.toInt()-1]}")
         }
         val chosenCard = this.cards[cardNo.toInt() - 1]
         tableCards.cards.add(chosenCard)
@@ -133,6 +144,70 @@ class PlayerCards : CardGroup() {
         println("Score: Player ${userCards.point} - Computer ${computerCards.point}")
         println("Cards: Player ${userCards.wonCards.size} - Computer ${computerCards.wonCards.size}")
     }
+
+    fun noCardsOnTableOrCandidate(tableLastCard: Card = Card("", "")): String{
+        val sameSuits: MutableList<Card>
+        val sameRanks: MutableList<Card>
+        if (tableLastCard.suit == ""){
+            sameSuits = getSameSuits()
+            sameRanks = getSameRanks()
+        } else {
+            sameSuits = getSameSuits(listOf(tableLastCard.suit),findCandidateCards())
+            sameRanks = getSameRanks(listOf(tableLastCard.rank),findCandidateCards())
+        }
+
+
+        val chosenCard = when {
+            sameSuits.size > 0 -> sameSuits.random()
+            sameRanks.size > 0 -> sameRanks.random()
+            else -> cards.random()
+        }
+        return (cards.indexOf(chosenCard)+1).toString()
+
+    }
+
+    fun getSameSuits(_suits: List<String> = suits, listOfCardsToSearch: MutableList<Card> = computerCards.cards): MutableList<Card>{
+        val sameSuits: MutableList<Card> = mutableListOf()
+        _suits.forEach {
+            var counter = 0
+            for (card in listOfCardsToSearch){
+                if (card.suit == it) counter++
+            }
+            if (counter>1){
+                for (card in listOfCardsToSearch){
+                    if (card.suit == it) sameSuits+= card
+                }
+            }
+        }
+        return sameSuits
+    }
+
+    private fun getSameRanks(_ranks: List<String> = ranks, listOfCardsToSearch: MutableList<Card> = computerCards.cards): MutableList<Card>{
+        val sameRanks: MutableList<Card> = mutableListOf()
+        _ranks.forEach {
+            var counter = 0
+            for (card in listOfCardsToSearch){
+                if (card.rank == it) counter++
+            }
+            if (counter>1){
+                for (card in listOfCardsToSearch){
+                    if (card.rank == it) sameRanks+= card
+                }
+            }
+        }
+        return sameRanks
+    }
+
+    fun findCandidateCards(): MutableList<Card>{
+        val candidateCards: MutableList<Card> = mutableListOf()
+            for (card in computerCards.cards){
+                if (card.rank == tableLastCard.rank || card.suit == tableLastCard.suit){
+                    candidateCards.add(card)
+                }
+            }
+        return candidateCards
+    }
+
 }
 
 
@@ -152,6 +227,10 @@ fun exitGame(userIsLastWinner: Boolean) {
 
     println("Score: Player ${userCards.point} - Computer ${computerCards.point}")
     println("Cards: Player ${userCards.wonCards.size} - Computer ${computerCards.wonCards.size}")
+    gameOver()
+}
+
+fun gameOver(){
     println("Game Over")
     exitProcess(0)
 }
