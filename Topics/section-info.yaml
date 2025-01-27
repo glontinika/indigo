@@ -1,3 +1,7 @@
 content:
   - Type system
   - Secondary constructor
+  - Scopes
+  - Inheritance
+  - toString()
+  - Data class

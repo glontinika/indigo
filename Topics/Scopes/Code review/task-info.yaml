@@ -1,0 +1,15 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: 5
+  - text: 4
+  - text: Infinite loop
+  - text: 0
+files:
+  - name: src/Main.kt
+    visible: true
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/21748#comment
+status: Solved
+record: -1
+local_check: false

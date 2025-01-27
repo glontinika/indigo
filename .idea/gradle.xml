@@ -15,6 +15,24 @@
             <option value="$PROJECT_DIR$/Indigo Card Game/task/build/reports/tests" />
             <option value="$PROJECT_DIR$/Indigo Card Game/task/build/test-results" />
             <option value="$PROJECT_DIR$/Indigo Card Game/task/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Data class/Allowance for functions" />
+            <option value="$PROJECT_DIR$/Topics/Data class/Illegal to override" />
+            <option value="$PROJECT_DIR$/Topics/Data class/Room mystery" />
+            <option value="$PROJECT_DIR$/Topics/Data class/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Data class/copy() usage" />
+            <option value="$PROJECT_DIR$/Topics/Data class/toString() modification" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Constructing a hierarchy" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Create a child class" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Fix bugs" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Keyword" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Requirement" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Statements about inheritance" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Scopes/Code review" />
+            <option value="$PROJECT_DIR$/Topics/Scopes/Cyclist" />
+            <option value="$PROJECT_DIR$/Topics/Scopes/Open chest in Hogwarts" />
+            <option value="$PROJECT_DIR$/Topics/Scopes/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Scopes/Unlucky one" />
             <option value="$PROJECT_DIR$/Topics/Secondary constructor/Errors and where to find them" />
             <option value="$PROJECT_DIR$/Topics/Secondary constructor/Fabric manufacture" />
             <option value="$PROJECT_DIR$/Topics/Secondary constructor/Spot the error" />
@@ -24,6 +42,12 @@
             <option value="$PROJECT_DIR$/Topics/Type system/Reverse me if you can" />
             <option value="$PROJECT_DIR$/Topics/Type system/String length" />
             <option value="$PROJECT_DIR$/Topics/Type system/Theory" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Espresso" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Inheritance" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Number of cups" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Tea" />
+            <option value="$PROJECT_DIR$/Topics/toString()/Theory" />
+            <option value="$PROJECT_DIR$/Topics/toString()/User Information" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

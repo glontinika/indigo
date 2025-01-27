@@ -6,6 +6,9 @@ files:
   - name: test/IndigoCardGameTest.kt
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/214/stages/1075/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/16511#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 27 Jan 2025 15:58:58 UTC"
 record: -1
